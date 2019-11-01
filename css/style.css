@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box; }
+  
+  body {
+    background-color: #4c8dd8;
+    min-height: 100vh; }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    position: absolute;
+    padding-top: 6vw;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%; }
+    ul.tight {
+      padding-top: 8.6vw; }
+  
+  .board {
+    position: relative;
+    height: 100%; }
+    .board__top {
+      min-height: 30vh; }
+    .board__bottom {
+      min-height: 60vh; }
+     .board__next {
+       min-height: 0vh;
+     } 
+  
+  .col-pile-1 {
+    min-width: 7.2vw; }
+  
+  .col-pile-4 {
+    min-width: 28.8vw; }
+  
+  .col-pile-offset-1 {
+    margin-left: 7.2vw; }
+  
+  .box {
+    min-height: 10vw;
+    position: relative; }
+  
+  .pile {
+    border: 1px dotted #fff;
+    display: inline-block;
+    float: none;
+    position: relative;
+    height: 100%;
+    min-height: 10vw;
+    width: 7.2vw;
+    background-color: #0e4d3d;
+    margin: 1vw; }
+    .pile.stash {
+      position: relative; }
+      .pile.stash .card {
+        margin-top: -18px;
+        position: absolute;
+        top: 0;
+        left: 0; }
+  
+  .card {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    width: 7.2vw;
+    height: 10vw;
+    display: block;
+    background-color: #eedf0d;
+    position: relative;
+    border: 1px solid rgb(235, 116, 36);
+    margin-top: -7.2vw; }
+    .tight .card {
+      margin-top: -8.6vw; }
+    .card.uncovered:after {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      background: #fff; }
+  
+  .board__top, .board__bottom, .board__next {
+    margin: 0 auto;
+    display: block; }
+  
+  .btn {
+    min-width: 7vw;
+    max-height: 3vw;
+    font-size: 1vw;
+    line-height: 2vw;
+    padding: 0;
+    margin-top: 1vw; }
+  
+  .score {
+    position: relative;
+    max-width: 7vw; }
+  
+  .panel {
+    font-size: 1vw;
+    max-width: 9vw;
+    padding: 1vw;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .panel td:first-child {
+      text-align: left; }
+    .panel td:last-child {
+      text-align: right; }
+  
+  .info {
+    min-width: 300px;
+    min-height: 300px; }
+  
+  #js-deck {
+    position: absolute;
+    left: -200px; }
